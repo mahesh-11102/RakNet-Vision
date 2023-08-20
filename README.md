@@ -1,6 +1,6 @@
 # RakNet-Vision
 ## Smart Connectivity Guide:
-### Since the dataset for this model aren't available  publicly so i created a hypothetical datastet and worked on it
+### Since the dataset for this model aren't available  publicly, created a hypothetical datastet and worked on it
 
 ### Architecture
 ````
