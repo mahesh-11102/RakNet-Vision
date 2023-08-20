@@ -1,6 +1,27 @@
 # RakNet-Vision
 ## Smart Connectivity Guide:
 ### Since the dataset for this model aren't available  publicly so i created a hypothetical datastet and worked on it
+
+### Architecture
+````
+Model: "sequential_39"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_20 (LSTM)              (None, 10, 100)           45200     
+                                                                 
+ dropout_71 (Dropout)        (None, 10, 100)           0         
+                                                                 
+ lstm_21 (LSTM)              (None, 50)                30200     
+                                                                 
+ dense_122 (Dense)           (None, 1)                 51        
+                                                                 
+=================================================================
+Total params: 75,451
+Trainable params: 75,451
+Non-trainable params: 0
+_________________________________________________________________
+````
 ### Hypothetical Dataset: [`synthetic_telecom_data.csv`](https://github.com/mahesh-11102/RakNet-Vision/blob/main/synthetic_telecom_data.csv)
 1. **Timestamped Data**: 
     - **Date and Time**: Generate a continuous series of timestamps. For instance, every minute for a year.
@@ -44,6 +65,35 @@
     - This could be a static part of your dataset, indicating your hypothetical SLA standards.
    
 ## AI-Powered Network Maintenance & Outage Predictor:
+### Architectture
+
+```
+Model: "sequential_43"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_136 (Dense)           (None, 256)               512       
+                                                                 
+ dropout_79 (Dropout)        (None, 256)               0         
+                                                                 
+ dense_137 (Dense)           (None, 128)               32896     
+                                                                 
+ dropout_80 (Dropout)        (None, 128)               0         
+                                                                 
+ dense_138 (Dense)           (None, 64)                8256      
+                                                                 
+ dropout_81 (Dropout)        (None, 64)                0         
+                                                                 
+ dense_139 (Dense)           (None, 32)                2080      
+                                                                 
+ dense_140 (Dense)           (None, 1)                 33        
+                                                                 
+=================================================================
+Total params: 43,777
+Trainable params: 43,777
+Non-trainable params: 0
+_________________________________________________________________
+```
 ### Hypothetical Dataset: [`hypothetical_telecom_data.csv`](https://github.com/mahesh-11102/RakNet-Vision/blob/main/hypothetical_telecom_data.csv)
 
 1. **user_id**:
@@ -77,6 +127,30 @@
     - **Purpose**: The target variable for our predictive analytics model. Based on previous data usage, this model aims to predict future expenses.
   
 ## Predictive Network Maintenance:
+### Architecture
+```
+Model: "sequential_40"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_123 (Dense)           (None, 128)               768       
+                                                                 
+ dropout_72 (Dropout)        (None, 128)               0         
+                                                                 
+ dense_124 (Dense)           (None, 64)                8256      
+                                                                 
+ dropout_73 (Dropout)        (None, 64)                0         
+                                                                 
+ dense_125 (Dense)           (None, 32)                2080      
+                                                                 
+ dense_126 (Dense)           (None, 1)                 33        
+                                                                 
+=================================================================
+Total params: 11,137
+Trainable params: 11,137
+Non-trainable params: 0
+_________________________________________________________________
+```
 ### Hypothetical Dataset: [`hypothetical_pred_telecom_data.csv`](https://github.com/mahesh-11102/RakNet-Vision/blob/main/hypothetical_pred_telecom_data.csv)
 
 1. **total_data_used (in GB)**
@@ -119,6 +193,30 @@ Remember, this dataset is entirely hypothetical. In a real-world scenario, more 
 
 
 ## Expense & Usage Forecaster:
+### Architecture
+```
+Model: "sequential_41"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_127 (Dense)           (None, 64)                640       
+                                                                 
+ dropout_74 (Dropout)        (None, 64)                0         
+                                                                 
+ dense_128 (Dense)           (None, 32)                2080      
+                                                                 
+ dropout_75 (Dropout)        (None, 32)                0         
+                                                                 
+ dense_129 (Dense)           (None, 16)                528       
+                                                                 
+ dense_130 (Dense)           (None, 1)                 17        
+                                                                 
+=================================================================
+Total params: 3,265
+Trainable params: 3,265
+Non-trainable params: 0
+_________________________________________________________________
+```
 ### Hypothetical Dataset: [`rakuten_telecom_expense.csv`](https://github.com/mahesh-11102/RakNet-Vision/blob/main/rakuten_telecom_expense.csv)
 
 1. **monthly_data_usage (in GB)**
