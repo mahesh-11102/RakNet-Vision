@@ -1,4 +1,20 @@
 # RakNet-Vision
+In today's interconnected world, users demand seamless mobile experiences. Dropped calls, slow videos, and unexpected charges are frustrating. Rakuten Mobile and similar providers need AI-powered tools to predict issues, offer data insights, suggest better connectivity, and ensure privacy, ultimately creating smoother mobile experiences. 
+
+`Tech Stacks `: Python, TensorFlow, Android Studio(Java), SQL, Firebase, Docker 
+## Introduction to Expense & Usage Forecaster:
+Rakuten's *Expense & Usage Forecaster* serves as a robust solution designed to aid Rakuten Mobile users in effectively budgeting their telecom expenditures.By leveraging historical data and intricate usage patterns, this forecaster offers accurate predictions of prospective monthly expenses. But its utility doesn't end there; it further enriches user experience by recommending tailored data-saving suggestions.
+##   Data Genesis and Features:
+Central to this solution is the "rakuten_telecom_expense.csv", a hypothetical dataset that encompasses an array of vital features. It documents monthly data usage, call frequencies, call durations, usage stats for services like Rakuten Fashion and Rakuten Recipe, and users' streaming quality preferences. Calculations of the monthly expenses hinge on these data metrics, establishing the foundation for predictive modeling.
+
+## Neural Network Modeling with TensorFlow: 
+The heart of the forecaster is a Neural Network-based regression model powered by TensorFlow. This model, enriched with multiple dense layers interlaced with dropout layers, safeguards against overfitting, ensuring consistent and reliable predictions. Trained meticulously on the dataset, the model uses Mean Squared Error (MSE) as its primary loss metric. To offer a clearer insight into its performance, the Mean Absolute Error (MAE) serves as the evaluative metric. 
+## Delivering Outcomes to Users:
+Once operational, the model equips Rakuten users with precise forecasts of their impending monthly expenses, grounding its predictions in their historical usage data. Beyond this, the model's insights can be harnessed to deliver data-saving suggestions. Examples include advising users to adjust their Rakuten Fashion streaming quality or modulating their Rakuten Recipe usage to align with budget constraints. 
+## A Glimpse into the Future:
+As we envision the future of the Expense & Usage Forecaster, there's an array of enhancements on the horizon. There's ample room to integrate more features, refining the predictive accuracy. Moreover, a dedicated recommendation engine could be conceived, blending the model's forecasts with nuanced user
+
+# Model Architecture and Data used
 ## Smart Connectivity Guide:
 ### Since the dataset for this model aren't available  publicly, created a hypothetical datastet and worked on it
 
